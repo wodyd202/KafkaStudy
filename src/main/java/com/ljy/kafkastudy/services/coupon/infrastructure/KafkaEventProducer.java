@@ -1,6 +1,5 @@
 package com.ljy.kafkastudy.services.coupon.infrastructure;
 
-import com.ljy.kafkastudy.services.coupon.domain.Coupon;
 import com.ljy.kafkastudy.services.coupon.service.EventProducer;
 import com.ljy.kafkastudy.services.coupon.service.event.DownloadedCouponEvent;
 import com.ljy.kafkastudy.services.coupon.service.resource.DownloadCouponResource;
