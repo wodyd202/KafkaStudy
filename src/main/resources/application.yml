@@ -1,0 +1,20 @@
+spring:
+  kafka:
+    producer:
+      properties:
+        enable.idempotence: true
+        transactional.id: tran-id-1
+      bootstrap-servers: "localhost:9092"
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      transaction-id-prefix: tx-
+    consumer:
+      bootstrap-servers: "localhost:9092"
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+
+ljy:
+  kafka:
+    topic:
+      coupon-download: "coupon-download"
